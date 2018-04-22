@@ -1,0 +1,21 @@
+@import '../../styles/variables.scss';
+header {
+  width: 100%;
+  height: 25px;
+  display: flex;
+  position: fixed;
+  padding: 15px 0;
+  text-align: center;
+  align-items: center;
+  display: -webkit-flex;
+  justify-content: center;
+  border-bottom: $header-border;
+  background-color: $header-bg-color;
+  box-shadow: $header-shadow;
+  -moz-box-shadow: $header-shadow;
+  -webkit-box-shadow: $header-shadow;
+}
+
+header img {
+  width: 160px;
+}

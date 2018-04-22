@@ -1,0 +1,32 @@
+:host {
+  width: 100%;
+  display: flex;
+  min-height: 100%;
+  align-items: center;
+  display: -webkit-flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  :host {
+    padding: 55px 0;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  @media only screen and (max-width: 1024px) {
+    app-weather-card {
+      flex-grow: 1;
+      margin: 2em 0 0;
+    }
+    app-weather-card:nth-child(1) {
+      order: 2;
+    }
+    app-weather-card:nth-child(2) {
+      order: 1;
+    }
+    app-weather-card:nth-child(3) {
+      order: 3;
+    }
+  }
+}
